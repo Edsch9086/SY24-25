@@ -8,4 +8,26 @@
 
         sender.fill = brush1.Fill
     End Sub
+
+    Private Function getRect(i As Integer) As Rectangle
+        Dim s As String
+        If i < 10 Then
+            s = "p00" & i
+        Else
+            s = "p" & i
+        End If
+        For Each u In grid1.Children
+
+            If u.name.Startswith(s) Then
+                Return u
+            End If
+        Next
+        Return Nothing
+    End Function
+
+    Private Sub topbutton_Click(sender As Object, e As RoutedEventArgs) Handles topbutton.Click
+        For index = 0 To 255
+            getRect(index).Fill = brush1.Fill
+        Next
+    End Sub
 End Class
