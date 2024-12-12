@@ -136,7 +136,7 @@
         <Rectangle x:Name="p126" HorizontalAlignment="Left" Height="30" Margin="428,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
         <Rectangle x:Name="p127" HorizontalAlignment="Left" Height="30" Margin="458,220,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
         <Rectangle x:Name="p128" HorizontalAlignment="Left" Height="30" Margin="10,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
-        <Rectangle x:Name="p129" HorizontalAlignment="Right" Height="30" Margin="0,250,730,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
+        <Rectangle x:Name="p129" HorizontalAlignment="Left" Height="30" Margin="40,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
         <Rectangle x:Name="p144" HorizontalAlignment="Left" Height="30" Margin="10,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
         <Rectangle x:Name="p145" HorizontalAlignment="Left" Height="30" Margin="40,280,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
         <Rectangle x:Name="p130" HorizontalAlignment="Left" Height="30" Margin="70,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="30" Fill="White"/>
@@ -272,9 +272,13 @@
         <Rectangle x:Name="fill6" HorizontalAlignment="Left" Height="60" Margin="730,370,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" RenderTransformOrigin="0.457,0.584" Fill="#FF0000FD"/>
         <Rectangle x:Name="fill7" HorizontalAlignment="Left" Height="60" Margin="730,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" Fill="Yellow"/>
         <Button Content="Button" HorizontalAlignment="Left" Margin="595,340,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="topbutton" Content="Topbutton" HorizontalAlignment="Left" Margin="595,340,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="595,360,0,0" VerticalAlignment="Top"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="550,360,0,0" VerticalAlignment="Top" Width="19"/>
+        <Button x:Name="topbutton" Content="Topbutton" HorizontalAlignment="Left" Margin="595,340,0,0" VerticalAlignment="Top" Width="40"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="595,360,0,0" VerticalAlignment="Top" Width="40" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="571,340,0,0" VerticalAlignment="Top" Width="19" Height="40"/>
+        <Rectangle x:Name="fill8" HorizontalAlignment="Left" Height="60" Margin="670,430,0,0" Stroke="Black" VerticalAlignment="Top" Width="60" Fill="White"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="571,340,0,0" VerticalAlignment="Top" Width="19" Height="40"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="571,340,0,0" VerticalAlignment="Top" Width="19" Height="40"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="551,340,0,0" VerticalAlignment="Top" Width="20" Height="40"/>
 
     </Grid>
 </Window>

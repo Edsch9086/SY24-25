@@ -1,5 +1,5 @@
 ﻿Class MainWindow
-    Private Sub fill1_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles fill1.MouseDown, fill2.MouseDown, fill3.MouseDown, fill4.MouseDown, fill5.MouseDown, fill6.MouseDown, fill7.MouseDown
+    Private Sub fill1_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles fill1.MouseDown, fill2.MouseDown, fill3.MouseDown, fill4.MouseDown, fill5.MouseDown, fill6.MouseDown, fill7.MouseDown, fill8.MouseDown
 
         brush1.Fill = sender.fill
     End Sub
@@ -13,6 +13,9 @@
         Dim s As String
         If i < 10 Then
             s = "p00" & i
+        ElseIf i < 100 Then
+
+            s = "p0" & i
         Else
             s = "p" & i
         End If
@@ -26,7 +29,13 @@
     End Function
 
     Private Sub topbutton_Click(sender As Object, e As RoutedEventArgs) Handles topbutton.Click
-        For index = 0 To 255
+        For index = 0 To 127
+            getRect(index).Fill = brush1.Fill
+        Next
+    End Sub
+
+    Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
+        For index = 128 To 255
             getRect(index).Fill = brush1.Fill
         Next
     End Sub
